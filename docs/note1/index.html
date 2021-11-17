@@ -1,0 +1,231 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="ie=edge">
+<title>Tasks Sept 2021 - Amedev Docs</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=icon href=https://helberth.github.io/amedev-docs/favicon.png>
+<link rel=stylesheet href=../../css/style.min.6719d72e323121369d5caeb4264b95d8a63cf1deaab029da67602fe5a046e0a4.css>
+</head>
+<body class="page page-default-single">
+<div id=main-menu-mobile class=main-menu-mobile>
+<ul>
+<li class=menu-item-home>
+<a href=../../>
+<span>Home</span>
+</a>
+</li>
+<li class=menu-item-docs>
+<a href=../../docs/>
+<span>Docs</span>
+</a>
+</li>
+</ul>
+</div>
+<div class=wrapper>
+<div class=header>
+<div class=container>
+<div class=logo>
+<a href=https://helberth.github.io/amedev-docs/><img alt=Logo src=../../images/logo.svg></a>
+</div>
+<div class=logo-mobile>
+<a href=https://helberth.github.io/amedev-docs/><img alt=Logo src=../../images/logo-mobile.svg></a>
+</div>
+<div id=main-menu class=main-menu>
+<ul>
+<li class=menu-item-home>
+<a href=../../>
+<span>Home</span>
+</a>
+</li>
+<li class=menu-item-docs>
+<a href=../../docs/>
+<span>Docs</span>
+</a>
+</li>
+</ul>
+</div>
+<button id=toggle-main-menu-mobile class="hamburger hamburger--slider" type=button>
+<span class=hamburger-box>
+<span class=hamburger-inner></span>
+</span>
+</button>
+</div>
+</div>
+<div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+<div class=row>
+<div class="col-12 col-md-3 mb-3">
+<div class=sidebar>
+<div class=docs-menu>
+<h4>Docs</h4>
+<ul>
+<li class=active>
+<a href=https://helberth.github.io/amedev-docs/docs/note1/>Tasks Sept 2021</a>
+</li>
+<li>
+<a href=https://helberth.github.io/amedev-docs/docs/note2/>Tasks Nov 2021</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-9">
+<h1 class=title>Tasks Sept 2021</h1>
+<div class=content>
+<p><strong>Install php-curl</strong></p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-Bash data-lang=Bash>$ sudo add-apt-repository ppa:ondrej/php
+$ sudo apt update
+$ sudo apt-get update
+$ sudo apt-get install php6-curl
+$ sudo service apache2 restart
+</code></pre></div><p>get php.ini file location</p>
+<p>amelearning.com.conf@ &ndash;> /etc/apache2/sites-available/amelearning.com.conf</p>
+<p><strong>Install php 7</strong></p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>$ sudo apt install -y php7.4 php7.4-cli libapache2-mod-php7.4
+</code></pre></div><p><strong>Remove old php versions</strong></p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-Bash data-lang=Bash>$ sudo apt-get purge <span class=s1>&#39;php5.6*&#39;</span>
+$ sudo apt-get purge <span class=s1>&#39;php7.0*&#39;</span>
+$ sudo apt-get purge <span class=s1>&#39;php7.1*&#39;</span>
+$ sudo apt-get purge <span class=s1>&#39;php7.2*&#39;</span>
+$ sudo apt-get purge <span class=s1>&#39;php7.3\*&#39;</span>
+$ sudo apt-get autoremove
+</code></pre></div><p><strong>Upgrade ubuntu 16.04 to 18.04</strong></p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-Bash data-lang=Bash>$ sudo apt-get update
+$ sudo apt-get upgrade -y
+$ sudo apt-get dist-upgrade -y
+$ sudo apt-get autoremove
+$ sudo apt-get install update-manager-core
+$ sudo vim /etc/update-manager/release-upgrades
+<span class=c1># Prompt option should be set to lts</span>
+$ sudo <span class=k>do</span>-release-upgrade
+</code></pre></div><p><strong>Install php stock</strong></p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-Bash data-lang=Bash>$ sudo apt install -y php7.4-mysql php7.4-dom php7.4-simplexml php7.4-ssh2 php7.4-xml php7.4-xmlreader
+$ sudo apt install -y php7.4-curl php7.4-exif php7.4-ftp php7.4-gd php7.4-iconv php7.4-imagick
+$ sudo apt install -y php7.4-json php7.4-mbstring php7.4-posix php7.4-sockets php7.4-tokenizer
+</code></pre></div><p><strong>Link to executable (application/x-executable)</strong></p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=p>&lt;</span><span class=nt>form</span>
+  <span class=na>action</span><span class=o>=</span><span class=s>&#34;https://ameengage2019.dealopia.com/learninglibrary/GetPin.php&#34;</span>
+  <span class=na>method</span><span class=o>=</span><span class=s>&#34;get&#34;</span>
+<span class=p>&gt;</span>
+  Name: <span class=p>&lt;</span><span class=nt>input</span> <span class=na>type</span><span class=o>=</span><span class=s>&#34;text&#34;</span> <span class=na>name</span><span class=o>=</span><span class=s>&#34;name&#34;</span> <span class=p>/&gt;&lt;</span><span class=nt>br</span> <span class=p>/&gt;</span>
+  E-mail: <span class=p>&lt;</span><span class=nt>input</span> <span class=na>type</span><span class=o>=</span><span class=s>&#34;text&#34;</span> <span class=na>name</span><span class=o>=</span><span class=s>&#34;email&#34;</span> <span class=p>/&gt;&lt;</span><span class=nt>br</span> <span class=p>/&gt;</span>
+  <span class=p>&lt;</span><span class=nt>input</span> <span class=na>type</span><span class=o>=</span><span class=s>&#34;submit&#34;</span> <span class=p>/&gt;</span>
+<span class=p>&lt;/</span><span class=nt>form</span><span class=p>&gt;</span>
+</code></pre></div><p><strong>Moodle Server</strong>
+<strong>php.ini file</strong></p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-Bash data-lang=Bash>$ sudo vim /etc/php/7.1/apache/php.ini
+<span class=c1># Change &#39;display_errors&#39; to &#39;On&#39; --default:&#39;Off&#39;</span>
+<span class=c1># Change &#39;error_log&#39; to &#39;/var/log/php/error.log&#39; --default: commented</span>
+</code></pre></div><p><strong>Restart apache2</strong></p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-Bash data-lang=Bash>$ sudo service apache2 start
+<span class=c1># or</span>
+$ sudo systemctl restart apache2
+</code></pre></div><p><strong>Create Log file for PHP</strong></p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>$ sudo mkdir /var/log/php
+$ sudo chown root:www-data /var/log/php
+$ sudo chmod 2750 php
+$ sudo touch /var/log/php/error.log
+$ sudo chmod 0664 /var/log/php/error.log
+</code></pre></div><p><strong>How to enable debug mode in Moodle</strong></p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-php data-lang=php><span class=c1># Edit the config.php file and placing the following code at the beginning:
+</span><span class=c1></span><span class=o>@</span><span class=nx>error_reporting</span> <span class=p>(</span><span class=k>E_ALL</span> <span class=o>|</span> <span class=nx>E_STRICT</span><span class=p>);</span>
+<span class=o>@</span><span class=nx>ini_set</span> <span class=p>(</span><span class=s1>&#39;display_errors&#39;</span><span class=p>,</span><span class=s1>&#39;1&#39;</span><span class=p>);</span>
+<span class=err>$</span> <span class=nx>CFG</span><span class=o>-&gt;</span> <span class=na>debug</span> <span class=o>=</span> <span class=p>(</span><span class=k>E_ALL</span> <span class=o>|</span> <span class=nx>E_STRICT</span><span class=p>);</span>
+<span class=err>$</span> <span class=nx>CFG</span><span class=o>-&gt;</span> <span class=na>debugdisplay</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>
+</code></pre></div><p><strong>Check php extension</strong></p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>$ php -i | grep -i openssl
+</code></pre></div><p><strong>CodeIgniter4</strong></p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>$ composer require twbs/bootstrap enyo/dropzone datatables.net-dt
+</code></pre></div><p><strong>Deploy node app apache/ubuntu</strong></p>
+<p>Step 1: Install Node.js</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-console data-lang=console><span class=gp>$ </span>curl -sL https://deb.nodesource.com/setup_14.x <span class=p>|</span> sudo -E bash -
+<span class=gp>$ </span>sudo apt install -y nodejs
+<span class=gp>$ </span>node -v
+<span class=gp>$ </span>npm -v
+<span class=gp>$ </span>sudo apt install build-essential
+</code></pre></div><p>Step 2: Install Process Manager</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-Bash data-lang=Bash>$ sudo npm install pm2 -g
+$ pm2 start path_tonode_app/app.js
+$ sudo pm2 startup systemd
+<span class=c1># or</span>
+$ sudo pm2 startup upstart
+</code></pre></div><p>Step 3: Configure Apache</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>$ sudo a2enmod proxy proxy_http
+</code></pre></div><p><strong>app.js</strong></p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-JavaScript data-lang=JavaScript><span class=kr>const</span> <span class=nx>http</span> <span class=o>=</span> <span class=nx>require</span><span class=p>(</span><span class=s2>&#34;http&#34;</span><span class=p>);</span>
+<span class=kr>const</span> <span class=nx>hostname</span> <span class=o>=</span> <span class=s2>&#34;localhost&#34;</span><span class=p>;</span>
+<span class=kr>const</span> <span class=nx>port</span> <span class=o>=</span> <span class=mi>3000</span><span class=p>;</span>
+
+<span class=kr>const</span> <span class=nx>server</span> <span class=o>=</span> <span class=nx>http</span><span class=p>.</span><span class=nx>createServer</span><span class=p>((</span><span class=nx>req</span><span class=p>,</span> <span class=nx>res</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>{</span>
+  <span class=nx>res</span><span class=p>.</span><span class=nx>statusCode</span> <span class=o>=</span> <span class=mi>200</span><span class=p>;</span>
+  <span class=nx>res</span><span class=p>.</span><span class=nx>setHeader</span><span class=p>(</span><span class=s2>&#34;Content-Type&#34;</span><span class=p>,</span> <span class=s2>&#34;text/plain&#34;</span><span class=p>);</span>
+  <span class=nx>res</span><span class=p>.</span><span class=nx>end</span><span class=p>(</span><span class=s2>&#34;Welcome to Node.js!\n&#34;</span><span class=p>);</span>
+<span class=p>});</span>
+
+<span class=nx>server</span><span class=p>.</span><span class=nx>listen</span><span class=p>(</span><span class=nx>port</span><span class=p>,</span> <span class=nx>hostname</span><span class=p>,</span> <span class=p>()</span> <span class=p>=&gt;</span> <span class=p>{</span>
+  <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=sb>`Server running at http://</span><span class=si>${</span><span class=nx>hostname</span><span class=si>}</span><span class=sb>:</span><span class=si>${</span><span class=nx>port</span><span class=si>}</span><span class=sb>/`</span><span class=p>);</span>
+<span class=p>});</span>
+</code></pre></div><h4 id=deploy-adonisjs>Deploy adonisjs</h4>
+<ol>
+<li>Buil for production</li>
+</ol>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>$ node ace build --production
+</code></pre></div><ol start=2>
+<li>install dependencies</li>
+</ol>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-console data-lang=console><span class=gp>$ </span><span class=nb>cd</span> build
+<span class=gp>$ </span>npm ci --production
+</code></pre></div><ol start=3>
+<li>Start server</li>
+</ol>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>$ node server.js
+</code></pre></div><p><strong>Apache Proxy Reverse Configuration</strong></p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-ApacheConf data-lang=ApacheConf><span class=nt>&lt;Location</span> <span class=s>/resources</span><span class=nt>&gt;</span>
+<span class=nb>Order</span> allow,deny
+<span class=nb>Allow</span> from <span class=k>all</span>
+
+    <span class=nb>RewriteEngine</span> <span class=k>On</span>
+    <span class=nb>RewriteCond</span> %{HTTP:Upgrade} =websocket [NC]
+    <span class=nb>RewriteRule</span> <span class=sx>/var/www/</span>(.*)           ws://127.0.01:3333/$1 [P,L]
+    <span class=nb>RewriteCond</span> %{HTTP:Upgrade} !=websocket [NC]
+    <span class=nb>RewriteRule</span> <span class=sx>/var/www/</span>(.*)           http://127.0.0.1:3333/$1 [P,L]
+
+    <span class=nb>ProxyPassReverse</span> http://127.0.0.1:3333
+
+<span class=nt>&lt;/Location&gt;</span>
+</code></pre></div><p><strong>AMEDocs Node</strong></p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-Bash data-lang=Bash><span class=nv>ROOT_URL</span> <span class=o>=</span> https://ameengage2019.dealopia.com/resources/ node main.js
+<span class=nv>email</span> <span class=o>=</span> admin@amedocs.com
+<span class=nv>password</span> <span class=o>=</span> !SJ<span class=o>[</span>Edc7abGgLYtr
+</code></pre></div><p><strong>Conect with ssh</strong></p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-console data-lang=console><span class=gp>$ </span>ssh -i path/to/key user@IP_ADDRESS
+</code></pre></div><p>examples</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-Bash data-lang=Bash>$ ssh -i ~/.ssh/id_rsa_ibipul w8hj48kvvds3@166.62.75.227
+$ ssh -p <span class=m>22</span> -i ~/.ssh/central-canada-key1.pem ubuntu@52.60.233.18
+$ scp -v -P <span class=m>22</span> -i ~/.ssh/central-canada-key1.pem amedocs_build.tar.bz2 ubuntu@52.60.233.18:/ebs/amedocs/
+</code></pre></div><p><strong>Error with argon2</strong></p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>$ sudo npm install -g node-pre-gyp
+$ node-pre-gyp rebuild -C ./node_modules/argon2
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=sub-footer>
+<div class=container>
+<div class=row>
+<div class=col-12>
+<div class=sub-footer-inner>
+<ul>
+<li class=zerostatic><a href=https://www.zerostatic.io>www.zerostatic.io</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type=text/javascript src=../../js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js></script>
+</body>
+</html>
