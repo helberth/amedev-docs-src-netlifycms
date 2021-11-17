@@ -29,5 +29,6 @@ jobs:
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: helberth/amedev-docs
+          publish_branch: main # default: gh-pages
           publish_dir: ./public
           # github_token: ${{ secrets.GITHUB_TOKEN }}
