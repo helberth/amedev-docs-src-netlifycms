@@ -29,7 +29,6 @@ jobs:
       #   with:
       #     github_token: ${{ secrets.GITHUB_TOKEN }}
       #     publish_dir: ./public
-
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         env:
@@ -37,6 +36,6 @@ jobs:
           EXTERNAL_REPOSITORY: helberth/amedev-docs
           PUBLISH_BRANCH: main
           PUBLISH_DIR: ./public
-        with:
-          emptyCommits: false
-          commitMessage: ${{ github.event.head_commit.message }}
+        # with:
+        #   emptyCommits: false
+        #   commitMessage: ${{ github.event.head_commit.message }}
