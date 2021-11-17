@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "Amedev Docs"
 themesDir = "themes"
 theme = "hugo-whisper-theme"
+relativeURLs = true
+canonifyURLs = true
 
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
