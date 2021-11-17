@@ -1,6 +1,6 @@
-baseURL = "https://helberth.github.io/ame-dev-docs/"
+baseURL = "https://helberth.github.io/amedev-docs/"
 languageCode = "en-us"
-title = "AME Dev Docs"
+title = "Amedev Docs"
 themesDir = "themes"
 theme = "hugo-whisper-theme"
 
