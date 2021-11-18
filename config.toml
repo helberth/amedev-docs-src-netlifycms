@@ -1,4 +1,4 @@
-baseURL = "https://helberth.github.io/amedev-docs-src-forestry/"
+baseURL = "https://helberth.github.io/amedev-docs-src-netlifycms/"
 languageCode = "en-us"
 title = "Amedev Docs"
 themesDir = "themes"
